@@ -1,0 +1,5 @@
+actions:
+  - action: binary.github
+    name: comtrya
+    directory: /tmp
+    repository: comtrya/comtrya

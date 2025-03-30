@@ -1,0 +1,70 @@
+[package]
+name = "comtrya-lib"
+version = "0.9.1"
+authors = ["David McKay <david@rawkode.dev>"]
+edition = "2021"
+license = "MIT"
+description = "Contains the interfaces for comtrya plugins"
+
+[dependencies]
+anyhow = "1.0"
+age = { version = "0.10", features = ["armor"] }
+dirs-next = "2.0"
+file_diff = "1.0"
+gethostname = "0.5"
+ignore = "0.4"
+normpath = "1.2"
+octocrab = "0.41"
+os_info = "3.7"
+petgraph = "0.6"
+rand = "0.8"
+regex = "1.11"
+reqwest = { version = "0.12", default-features = false, features = [
+    "blocking",
+    "rustls-tls",
+] }
+rhai = { version = "1.19", features = ["serde"] }
+schemars = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_yml = "0"
+sha256 = "1.5"
+tokio = "1.41"
+toml = "0.8"
+tera = "1.20"
+tracing = "0.1"
+trust-dns-resolver = "0.23.2"
+walkdir = "2.3"
+which = "7.0"
+whoami = "1.5"
+tar = "0.4.42"
+flate2 = "1.0.34"
+file-owner = "0.1.2"
+gix = { version = "0.68.0", features = [
+    "blocking-http-transport-reqwest-rust-tls",
+    "blocking-network-client",
+] }
+gix-protocol = "0.46.1"
+tealr = { version = "0.10.0", features = [
+    "mlua_lua54",
+    "mlua_anyhow",
+    "mlua_async",
+    "mlua_userdata-wrappers",
+    "tealr_derive",
+    "mlua_send",
+    "mlua_serialize",
+    "mlua",
+    "mlua_error-send",
+    "mlua_macros",
+    "mlua_vendored",
+] }
+camino = { version = "1.1.9", features = ["serde", "serde1"] }
+serde_with = { version = "3.12.0", features = ["schemars_0_8", "json"] }
+parking_lot = "0.12.3"
+
+[target.'cfg(unix)'.dependencies]
+uzers = "0.12"
+
+[dev-dependencies]
+tempfile = "3.13"
+pretty_assertions = "1.4"
