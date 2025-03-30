@@ -1,6 +1,0 @@
-actions:
-  - action: file.chown
-    path: ./files/some-file
-    user: test
-    group: test
-

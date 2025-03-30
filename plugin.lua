@@ -1,10 +1,3 @@
--- Sleep implementation from https://stackoverflow.com/a/17987723
-local socket = require("socket")
-
-local function sleep(sec)
-	socket.select(nil, nil, sec)
-end
-
 return {
 	name = "echo",
 	summary = "Echoed the output",

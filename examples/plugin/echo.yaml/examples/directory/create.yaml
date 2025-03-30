@@ -1,3 +1,0 @@
-actions:
-  - action: directory.create
-    path: /some-directory

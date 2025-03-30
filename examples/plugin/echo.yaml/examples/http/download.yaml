@@ -1,4 +1,0 @@
-actions:
-  - action: file.download
-    from: https://google.com
-    to: /tmp/abc

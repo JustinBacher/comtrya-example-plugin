@@ -1,4 +1,0 @@
-actions:
-  - action: git.clone
-    repo_url: https://github.com/comtrya/comtrya
-    directory: /Users/toddmartin/Testing/comtrya/

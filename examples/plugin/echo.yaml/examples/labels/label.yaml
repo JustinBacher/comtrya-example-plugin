@@ -1,8 +1,0 @@
-labels:
-  - labelled
-
-actions:
-  - action: command.run
-    command: echo
-    args:
-      - "Hello"
