@@ -1,0 +1,5 @@
+{
+    "Lua.workspace.library": [
+        "https://raw.githubusercontent.com/JustinBacher/repo/main/lua_definitions.lua"
+    ]
+}
