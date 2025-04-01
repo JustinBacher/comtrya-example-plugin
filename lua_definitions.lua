@@ -27,8 +27,5 @@ function Error(message) end
 ---@return nil
 function sleep(seconds) end
 
----Get contexts from the Comtrya runtime
----@param key string The key to get out of contexts
----@return table<string, string> context The context table for the specified key
-function get_context(key) ---@diagnostic disable-line:unused-local
-end
+---@type table<string, table<string, string>>
+contexts = {}
